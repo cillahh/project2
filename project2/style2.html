@@ -3,93 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>index</title>
+    <title>Style2</title>
     <style>
         body{
-            margin : 20px;
-            font : 100% Lucida Sans, Verdana;
-            line-height: 26px;
+            font-family: Arial;
+            line-height: 20px;
+            background-color: #d14836;
         }
         #top {
-            background-color: #04AA6D;
             padding: 15px;
             color: #ffffff;
-            border-radius: 4px;
+            font-size: 30px;
+            line-height: 26px;
         }
-        #top h1, #top p {
-            margin: 0px;
-            padding: 0px;
+        #menubar {
+            float: right;
+
         }
-        #left {
-            width: 200px;
-            float: left;
-        }
-        #right {
-            background-color: #32a4e7;
-            color: #ffffff;
-            border-radius: 4px;
-            width: 180px;
-            position: absolute;
-            top: 0;
-            right: 0;
-            bottom: 0px;
+        #sidebar {
+            background-color: #F6DAD7;
+            color: #d14836;
             padding: 10px;
         }
-        #center {
-            margin: 0px 210px;
+        #main {
+            font : 80% Verdana;
+            background-color: #ffffff;
+            padding: 10px;
         }
         #bottom {
-            border: 1px solid #d4d4d4;
-            border-radius: 4px;
             font-size: 70%;
             padding: 10px;
-            background-color: #f1f1f1;
+            color: #ffffff;
             text-align: center;
-            margin: 4px;
         }
         .menuitem{
-            background-color: #f1f1f1;
-            border : 1px solid #d4d4d4;
-            border-radius: 4px;
-            cursor: pointer;
-            margin : 4px;
-            padding: 2px;
-        }
-        #style1 {
-            background-color: #04AA6D;
-            font-weight: bold;
+            font: 16px verdana;
+            width: 155px;
+            background-color: #d14836;
+            border: 1px solid #d14836;
+            border-radius: 40px;
             color: #ffffff;
+            list-style-type: none;
+            margin: 10px;
+            padding: 5px;
+            text-align: center;
+            cursor: pointer;
+        }
+        #style2 {
+            background-color: #ffffff;
+            font-weight: bold;
+            color: #d14836;
+        }
+        #wrapper{
+            position: relative;
+            overflow: auto;
         }
     </style>
 </head>
 <body>
     <div id="top">
-        <h1>Welcome to My Homepage</h1>
+        <h1 style="margin: 0px; line-height: 50px;">Welcome to My Homepage</h1>
         <p>Use the menu to select different Stylesheets</p>
     </div>
-    <div style="position: relative; display: block;">
-        <div id="left">
-            <p class="menuitem" id="style1">Stylesheet 1</p>
-            <p class="menuitem">Stylesheet 2</p>
-            <p class="menuitem">Stylesheet 3</p>
-            <p class="menuitem">Stylesheet 4</p>
-            <p class="menuitem">No Stylesheet</p>
+    <div id="wrapper">
+        <div id="menubar">
+            <ul style="padding: 0px;">
+                <p class="menuitem">Stylesheet 1</p>
+                <p class="menuitem" id="style2">Stylesheet 2</p>
+                <p class="menuitem">Stylesheet 3</p>
+                <p class="menuitem">Stylesheet 4</p>
+                <p class="menuitem">No Stylesheet</p>
+            </ul>
+            
         </div>
-        <div id="center">
-            <h1>Same Page Different Stylesheets</h1>
+        <div id="main">
+            <h1 style="color: #d14836;">Same Page Different Stylesheets</h1>
             <p>This is a demonstration of how different stylesheets can change the layout of your HTML page. You can change the layout of this page by selecting different stylesheets in the menu, or by selecting one of the following links:
+                <br>
+                <a href="" style="color: #d14836;">Stylesheet1</a> , 
+                <a href="" style="color: #d14836;">Stylesheet2</a> , 
+                <a href="" style="color: #d14836;">Stylesheet3</a> , 
+                <a href="" style="color: #d14836;">Stylesheet4</a> .
             </p>
-            <p>Stylesheet1, Stylesheet2, Stylesheet3, Stylesheet4.</p>
         
-            <h1>No Styles</h1>
+            <h2 style="color: #d14836;">No Styles</h1>
             <p>
                 This page uses DIV elements to group different sections of the HTML page. Click here to see how the page looks like with no stylesheet:
-            </p>
-            <p>
-                No Stylesheet.
+                <br>
+                <a href="" style="color: #d14836;">No Stylesheet</a>.
             </p>
         </div>
-        <div id="right">
+        <div id="sidebar">
             <h3>
                 Side-Bar
             </h3>
@@ -98,7 +102,6 @@
             </p>
         </div>
     </div>
-
     <div id="bottom" style="display: block;">
         Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
     </div>
